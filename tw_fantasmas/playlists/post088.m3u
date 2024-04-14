@@ -1,0 +1,22 @@
+#EXTM3U
+
+# ╭──────────────────────────────────────────────────────────────────────╮
+# │ Corresponde a todo lo comentado en el post                           │
+# │ https://platform.twitter.com/embed/Tweet.html?id=1778548209163350405 │
+# ╰──────────────────────────────────────────────────────────────────────╯
+
+# Usamos la imagen del archivado https://archive.ph/9gKWC del tweet
+#EXTINF:10,‣ Post 088 Tal Cual Se Visualiza
+https://archive.ph/9gKWC/00f8ed0b8f0a82c5eba68e34b029007dddb059da/scr.png
+
+#EXTINF:10,Post 088.1 Imagen Adjunta del Post 088 
+https://pbs.twimg.com/media/GK6r12ZWsAAt5Ax?format=jpg
+
+#Enlace: https://tinyurl.com/experto-o-amateur
+#Resuelve: https://0x0.st/X-b3.mp4
+#Archivo: https://web.archive.org/web/20240411215608/https://0x0.st/X-b3.mp4
+#EXTINF:80.997583,Post 088.2 Escena citada
+https://web.archive.org/web/20240411215608/https://0x0.st/X-b3.mp4
+
+
+#EXT-X-ENDLIST
