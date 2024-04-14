@@ -1,0 +1,22 @@
+#EXTM3U
+
+# ╭──────────────────────────────────────────────────────────────────────╮
+# │ Corresponde a todo lo comentado en el post                           │
+# │ https://platform.twitter.com/embed/Tweet.html?id=1778192523074338972 │
+# ╰──────────────────────────────────────────────────────────────────────╯
+
+# Usamos la imagen del archivado https://archive.ph/zb9Kq del tweet
+#EXTINF:10,‣ Post 087 Tal Cual Se Visualiza
+https://archive.ph/zb9Kq/b58636a3e4326aebbf87c120d4c9fd6d9b3ff0e9/scr.png
+
+#EXTINF:10,Post 087.1 Imagen Adjunta del Post 087 
+https://pbs.twimg.com/media/GK1obXlWkAA-hyH?format=jpg
+
+#Enlace: https://tinyurl.com/empaquetar-con-gracia
+#Resuelve: https://web.archive.org/web/20240408093645/https://twitter.com/Errazkin/status/937458136759271424
+#Otro Archivo: https://archive.ph/RntCY de https://platform.twitter.com/embed/Tweet.html?id=937458136759271424
+#EXTINF:80.997583,Post 087.2 Visualización Inicio https://tinyurl.com/empaquetar-con-gracia
+https://archive.ph/RntCY/08c5365e759e820f67e27f1adea972664ebf9604/scr.png
+
+
+#EXT-X-ENDLIST

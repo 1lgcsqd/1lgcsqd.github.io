@@ -1,0 +1,21 @@
+#EXTM3U
+
+# ╭──────────────────────────────────────────────────────────────────────╮
+# │ Corresponde a todo lo comentado en el post                           │
+# │ https://platform.twitter.com/embed/Tweet.html?id=1613237600688689152 │
+# ╰──────────────────────────────────────────────────────────────────────╯
+
+# Usamos la imagen del archivado https://archive.ph/qTdaF del tweet
+#EXTINF:10,‣ Post 017 Tal Cual Se Visualiza
+https://archive.ph/qTdaF/c1447781597f160d033d7440d8c6a966094c4a59/scr.png
+
+#EXTINF:10,Post 017.1 Video Adjunto del Post 017 
+https://video.twimg.com/tweet_video/FmNeayaWYA4RSxb.mp4
+
+# Decidir qué hacer
+# https://tinyurl.com/2jk5mgs8  ==> https://images2.memedroid.com/images/UPLOADED22/51d854e3bc624.jpeg ==> https://archive.ph/eLHk5
+# https://tinyurl.com/2l559zuu  ==> https://me.me/i/demonios-no-hay-nada-que-ver-22570919
+# https://tinyurl.com/2peon3wt  ==> https://twitter.com/forges/status/904242588173168640/
+# https://platform.twitter.com/embed/Tweet.html?id=904242588173168640 ==> https://archive.ph/HyMfC [snapshot: https://archive.ph/HyMfC/26169e1b0496cd87d52102b1981d3c2b5a99a951/scr.png ]  
+
+#EXT-X-ENDLIST
