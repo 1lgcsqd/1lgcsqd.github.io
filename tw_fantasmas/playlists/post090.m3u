@@ -1,0 +1,28 @@
+#EXTM3U
+
+# Está incompleto, falta el archivo en "archivetoday.com"
+
+
+# ╭──────────────────────────────────────────────────────────────────────╮
+# │ Corresponde a todo lo comentado en el post                           │
+# │ https://platform.twitter.com/embed/Tweet.html?id=1779626166560710689 │
+# ╰──────────────────────────────────────────────────────────────────────╯
+
+# Usamos la imagen del archivado https://archive.ph/xxxx del tweet
+#EXTINF:10,‣ Post 090 Tal Cual Se Visualiza
+https://archive.ph/xxxxx/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx/scr.png
+
+#EXTINF:10,Post 090.1 Imagen Adjunta del Post
+https://pbs.twimg.com/media/GLKAi1dXkAE2XQD?format=jpg
+
+#EXTINF:-1,Post 090.2 Comic de Joe Dator 
+https://web.archive.org/web/20240414204736/https://0x0.st/X-xG.m3u
+
+#EXTINF:-1,Post 090.3 Todo Colombo
+https://web.archive.org/web/20240414201922/https://0x0.st/X-xt.m3u
+
+#EXTINF:-1,Post 090.4 Toda Colombo
+https://web.archive.org/web/20240414194408/https://0x0.st/X-xb.m3u
+
+
+#EXT-X-ENDLIST
