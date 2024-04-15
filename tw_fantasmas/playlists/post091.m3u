@@ -1,0 +1,18 @@
+#EXTM3U
+
+# Está pendiente conseguir el archivo en "archive.today"
+
+# ╭──────────────────────────────────────────────────────────────────────╮
+# │ Corresponde a todo lo comentado en el post                           │
+# │ https://platform.twitter.com/embed/Tweet.html?id=1779934982460350744 │
+# ╰──────────────────────────────────────────────────────────────────────╯
+
+# Usamos la imagen del archivado https://archive.ph/tpb81 del tweet
+#EXTINF:10,‣ Post 091 Tal Cual Se Visualiza
+https://archive.ph/xxxx/xxxx/scr.png
+
+#EXTINF:2.6,Post 091.1 Video Adjunto del Post 089 
+https://video.twimg.com/tweet_video/GLOYogwWwAEYmLq.mp4
+
+
+#EXT-X-ENDLIST
