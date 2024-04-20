@@ -1,16 +1,14 @@
 #EXTM3U
 
-# Está incompleto, falta el archivo en "archivetoday.com"
-
 
 # ╭──────────────────────────────────────────────────────────────────────╮
 # │ Corresponde a todo lo comentado en el post                           │
 # │ https://platform.twitter.com/embed/Tweet.html?id=1779626166560710689 │
 # ╰──────────────────────────────────────────────────────────────────────╯
 
-# Usamos la imagen del archivado https://archive.ph/xxxx del tweet
+# Usamos la imagen del archivado https://archive.ph/SDH5z del tweet
 #EXTINF:10,‣ Post 090 Tal Cual Se Visualiza
-https://archive.ph/xxxxx/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx/scr.png
+https://archive.ph/SDH5z/28b2a9ed250508e87e45f4369f387fcf71c0a46b/scr.png
 
 #EXTINF:10,Post 090.1 Imagen Adjunta del Post
 https://pbs.twimg.com/media/GLKAi1dXkAE2XQD?format=jpg

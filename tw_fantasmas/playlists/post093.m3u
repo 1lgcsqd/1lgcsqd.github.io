@@ -2,15 +2,18 @@
 
 # ╭──────────────────────────────────────────────────────────────────────╮
 # │ Corresponde a todo lo comentado en el post                           │
-# │ https://platform.twitter.com/embed/Tweet.html?id=1779934982460350744 │
+# │ https://platform.twitter.com/embed/Tweet.html?id=1781570734776553541 │
 # ╰──────────────────────────────────────────────────────────────────────╯
 
-# Usamos la imagen del archivado https://archive.ph/tpb81 del tweet
-#EXTINF:10,‣ Post 091 Tal Cual Se Visualiza
-https://archive.ph/tpb81/cf6f8cc9bb8a8d82da79053f1f87e7db47279478/scr.png
+# Usamos la imagen del archivado https://archive.ph/vJk6C del tweet
+#EXTINF:10,‣ Post 093 Tal Cual Se Visualiza
+https://archive.ph/vJk6C/84abf1164c659879119b647fb4f05deb83541921/scr.png
 
-#EXTINF:2.6,Post 091.1 Video Adjunto del Post 089 
-https://video.twimg.com/tweet_video/GLOYogwWwAEYmLq.mp4
+#EXTINF:10,Post 093.1 Imagen Adjunta del Post
+https://pbs.twimg.com/media/GLlobGOXsAA5ZkE?format=jpg
+
+#EXTINF:-1,Post 093.2 La lista de reproducción adjunta al Post
+https://web.archive.org/web/20240418220806/https://0x0.st/XouF.m3u
 
 
 #EXT-X-ENDLIST
