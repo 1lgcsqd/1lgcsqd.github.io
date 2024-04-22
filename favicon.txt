@@ -1,0 +1,10 @@
+# https://commons.wikimedia.org/wiki/File:Bull-155411.svg
+convert \
+  -density 384 \
+  -colors 256  \
+  -background transparent \
+  -define icon:auto-resize=32,16 \
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Bull-155411.svg/724px-Bull-155411.svg.png" \
+  -bordercolor lightblue \
+  -border 2 \
+  favicon.ico
