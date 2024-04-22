@@ -1,0 +1,27 @@
+#EXTM3U
+
+# ╭────────────────────────────────────────────╮
+# │ Corresponde al logo y banner de la cuenta  │
+# │ https://twitter.com/filos_fantasmas/       │
+# ╰────────────────────────────────────────────╯
+
+# Descripción:
+# ╭───────────────────────────────────────────────────────────────────────────────╮
+# │ Exprofesor (a tiempo completo) del aberrante dpto. filosofía UV. Renuncié por │
+# │ la mayoritaria falta de pensam. crítico y ética: demasiados bocazas y         │
+# │ fantasmas.                                                                    │
+# ╰───────────────────────────────────────────────────────────────────────────────╯
+
+#EXTINF:10,Logo (400x400) de filos_fantasmas [pillado de https://commons.wikimedia.org/wiki/File:Bull-155411.svg ]
+# https://twitter.com/filos_fantasmas/photo
+# https://pbs.twimg.com/profile_images/1575617420236029953/FHkFF-It.jpg
+https://archive.ph/OKkRP/dc78588a1c7a8ba2f2522a210ca0c06278d4f8c5.jpg
+# https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Bull-155411.svg/1448px-Bull-155411.svg.png [1448x2048]
+
+#EXTINF:10,Banner (1500x500) de filos_fantasmas
+# https://twitter.com/filos_fantasmas/header_photo
+# https://pbs.twimg.com/profile_banners/1575410063476498433/1664491443/1500x500
+https://archive.ph/kebWs/c78e225f4316927222a74456fd9ecf3e11f1dcea.jpg
+
+
+#EXT-X-ENDLIST
