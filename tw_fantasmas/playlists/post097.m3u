@@ -1,0 +1,19 @@
+#EXTM3U
+
+# ╭──────────────────────────────────────────────────────────────────────╮
+# │ Corresponde a todo lo comentado en el post                           │
+# │ https://platform.twitter.com/embed/Tweet.html?id=1783199113800266098 │
+# ╰──────────────────────────────────────────────────────────────────────╯
+
+# Usamos la imagen del archivado https://archive.ph/q0Swu del tweet
+#EXTINF:10,‣ Post 097 Tal Cual Se Visualiza
+https://archive.ph/q0Swu/a46d1cfa5f5c8afe429f0ef831230c7ab4f56e4f/scr.png
+
+#EXTINF:10,Post 097.1 Imagen Adjunta del Post
+https://pbs.twimg.com/media/GL8x92rXoAA6lUl?format=jpg
+
+#EXTINF:-1,Post 097.2 La lista de reproducción adjunta al Post
+https://web.archive.org/web/20240424182103/https://0x0.st/XHZt.m3u
+
+
+#EXT-X-ENDLIST
