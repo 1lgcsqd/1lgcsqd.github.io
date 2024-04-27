@@ -1,0 +1,27 @@
+#EXTM3U
+
+# ╭──────────────────────────────────────────────────────────────────────╮
+# │ Corresponde a todo lo comentado en el post                           │
+# │ https://platform.twitter.com/embed/Tweet.html?id=1784159866086363435 │
+# ╰──────────────────────────────────────────────────────────────────────╯
+
+# Usamos la imagen del archivado https://archive.ph/R0e0O del tweet
+#EXTINF:10,‣ Post 099 Tal Cual Se Visualiza
+https://archive.ph/R0e0O/dca88ada5edece062b0e380ebcdf9a4f6d1f4aaa/scr.png
+
+#EXTINF:10,Post 099.1 Video adjunto del Post
+https://video.twimg.com/ext_tw_video/1784159365076758529/pu/vid/avc1/1394x720/vTNve3bBhnNSwVpS.mp4
+
+# ┌┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┐
+# ┆ El video anterior está almenos en esta resoluciones y formatos                                      ┆
+# ┆  https://video.twimg.com/ext_tw_video/1784159365076758529/pu/vid/avc1/1394x720/vTNve3bBhnNSwVpS.mp4 ┆
+# ┆  https://video.twimg.com/ext_tw_video/1784159365076758529/pu/pl/avc1/1394x720/8HYvA-B4sxM_TTMC.m3u8 ┆
+# ┆  https://video.twimg.com/ext_tw_video/1784159365076758529/pu/vid/avc1/696x360/pXMwfofJVz6TFOC7.mp4  ┆
+# ┆  https://video.twimg.com/ext_tw_video/1784159365076758529/pu/pl/avc1/696x360/bSprdb7J5E6Xo8cu.m3u8  ┆
+# ┆  https://video.twimg.com/ext_tw_video/1784159365076758529/pu/vid/avc1/522x270/UL3yGVRVqKRKx-87.mp4  ┆
+# ┆  https://video.twimg.com/ext_tw_video/1784159365076758529/pu/pl/avc1/522x270/-qYJCrojN9aJAVmQ.m3u8  ┆
+# └┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┘
+
+
+
+#EXT-X-ENDLIST
