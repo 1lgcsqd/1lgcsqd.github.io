@@ -1,0 +1,16 @@
+#EXTM3U
+
+# ╭──────────────────────────────────────────────────────────────────────╮
+# │ Corresponde a todo lo comentado en el post                           │
+# │ https://platform.twitter.com/embed/Tweet.html?id=1786153902959669385 │
+# ╰──────────────────────────────────────────────────────────────────────╯
+
+# Usamos la imagen del archivado https://archive.ph/q0Swu del tweet
+#EXTINF:10,‣ Post 101 Tal Cual Se Visualiza
+https://archive.ph/NT7PR/d1f5931d700e94c7134d2221472feacb91f32816/scr.png
+
+#EXTINF:10,Post 101.1 Imagen Adjunta del Post
+https://pbs.twimg.com/media/GMmxYdaW0AAoTgr?format=jpg
+
+
+#EXT-X-ENDLIST
