@@ -8,7 +8,8 @@
 
 # Usamos la imagen del archivado https://archive.ph/SDH5z del tweet
 #EXTINF:10,‣ Post 090 Tal Cual Se Visualiza
-https://archive.ph/SDH5z/28b2a9ed250508e87e45f4369f387fcf71c0a46b/scr.png
+# https://archive.ph/SDH5z/28b2a9ed250508e87e45f4369f387fcf71c0a46b/scr.png
+https://wsrv.nl/?url=https://archive.ph/SDH5z/28b2a9ed250508e87e45f4369f387fcf71c0a46b/scr.png&trim=5&h=1000&output=jpg
 
 #EXTINF:10,Post 090.1 Imagen Adjunta del Post
 https://pbs.twimg.com/media/GLKAi1dXkAE2XQD?format=jpg

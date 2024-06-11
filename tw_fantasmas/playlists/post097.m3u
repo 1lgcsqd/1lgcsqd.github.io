@@ -7,7 +7,8 @@
 
 # Usamos la imagen del archivado https://archive.ph/q0Swu del tweet
 #EXTINF:10,‣ Post 097 Tal Cual Se Visualiza
-https://archive.ph/q0Swu/a46d1cfa5f5c8afe429f0ef831230c7ab4f56e4f/scr.png
+# https://archive.ph/q0Swu/a46d1cfa5f5c8afe429f0ef831230c7ab4f56e4f/scr.png
+https://wsrv.nl/?url=https://archive.ph/q0Swu/a46d1cfa5f5c8afe429f0ef831230c7ab4f56e4f/scr.png&trim=5&h=1000&output=jpg
 
 #EXTINF:10,Post 097.1 Imagen Adjunta del Post
 https://pbs.twimg.com/media/GL8x92rXoAA6lUl?format=jpg

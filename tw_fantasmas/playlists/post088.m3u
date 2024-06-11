@@ -7,7 +7,8 @@
 
 # Usamos la imagen del archivado https://archive.ph/9gKWC del tweet
 #EXTINF:10,‣ Post 088 Tal Cual Se Visualiza
-https://archive.ph/9gKWC/00f8ed0b8f0a82c5eba68e34b029007dddb059da/scr.png
+# https://archive.ph/9gKWC/00f8ed0b8f0a82c5eba68e34b029007dddb059da/scr.png
+https://wsrv.nl/?url=https://archive.ph/9gKWC/00f8ed0b8f0a82c5eba68e34b029007dddb059da/scr.png&trim=5&h=1000&output=jpg
 
 #EXTINF:10,Post 088.1 Imagen Adjunta del Post 088 
 https://pbs.twimg.com/media/GK6r12ZWsAAt5Ax?format=jpg
@@ -16,7 +17,7 @@ https://pbs.twimg.com/media/GK6r12ZWsAAt5Ax?format=jpg
 #Resuelve: https://0x0.st/X-b3.mp4
 #Archivo: https://web.archive.org/web/20240411215608/https://0x0.st/X-b3.mp4
 #EXTINF:80.997583,Post 088.2 Escena citada
-https://web.archive.org/web/20240411215608/https://0x0.st/X-b3.mp4
+https://web.archive.org/web/20240411215608if_/https://0x0.st/X-b3.mp4
 
 
 #EXT-X-ENDLIST

@@ -7,7 +7,8 @@
 
 # Usamos la imagen del archivado https://archive.ph/tpb81 del tweet
 #EXTINF:10,‣ Post 089 Tal Cual Se Visualiza
-https://archive.ph/tpb81/cf6f8cc9bb8a8d82da79053f1f87e7db47279478/scr.png
+# https://archive.ph/tpb81/cf6f8cc9bb8a8d82da79053f1f87e7db47279478/scr.png
+https://wsrv.nl/?url=https://archive.ph/tpb81/cf6f8cc9bb8a8d82da79053f1f87e7db47279478/scr.png&trim=5&h=1000&output=jpg
 
 #EXTINF:10,Post 089.1 Imagen Adjunta del Post 089 
 https://pbs.twimg.com/media/GLE-t6RWIAE_Wsy?format=jpg
@@ -21,7 +22,8 @@ https://tinyurl.com/flipado-que-va-a-flipar
 #Archivo en archive.org https://web.archive.org/web/20240414170737/https://www.rtve.es/play/videos/cine-de-siempre/jungla-cristal/6980852/
 #Archivo en archive.today https://archive.ph/cwO8G
 #EXTINF:10,Post 089.3 Visualización Inicio http://rtve.es/v/6980852
-https://archive.ph/cwO8G/c6544f20e259041b8aea4f3f30951b1c0695586a/scr.png
+# https://archive.ph/cwO8G/c6544f20e259041b8aea4f3f30951b1c0695586a/scr.png
+https://wsrv.nl/?url=https://archive.ph/cwO8G/c6544f20e259041b8aea4f3f30951b1c0695586a/scr.png&trim=5&h=1000&output=jpg
 
 
 #EXT-X-ENDLIST
