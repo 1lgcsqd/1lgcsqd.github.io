@@ -1,0 +1,159 @@
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>
+   Videos por programa de rtve
+  </title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <style type="text/css">
+   body{
+                   /* sacado de https://webgradients.com/ */
+                   /* background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%); /* */
+                   background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%); /* 016 DeepBlue */
+                   /* background-image: linear-gradient(to top, #209cff 0%, #68e0cf 100%); /* 120 SeaShore */
+                   /* background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%); /* 155 LandingAircraft */
+                   /* sacado de otros sitios
+                   /* background:linear-gradient(120deg, #212425, #718087, #5ba4e5, #9fbb58, #e9e8dd); /* http://www.brandgradients.com/ghost-colors/ */
+                }
+
+		#datos{
+			margin-top:40px;
+		}
+		.border{
+			margin: 4px;
+			max-width: 460px;
+		}
+  </style>
+ </head>
+ <body>
+  <!-- &lt;div class=&#34;container&#34;&gt; -->
+  <div class="container-fluid overflow-hidden">
+   <!-- &lt;div class=&#34;row&#34; id=&#34;datos&#34;&gt; -->
+   <div class="row g-0" id="datos">
+    <img id="cargando" src="https://ebarnette15.wordpress.com/wp-content/uploads/2013/03/loading-3.gif?w=200&amp;h=160">
+   </div>
+  </div>
+  <!-- jQuery -->
+  <!--
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+  </script>
+  -->
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js">
+  </script>
+  <script type="text/javascript">
+   function sacarVariablesUrl() {
+       var vars = {};
+       var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m, key, value) {
+           vars[key] = value;
+       });
+       return vars;
+   };
+
+   function secondsToTime(e) {
+       const h = Math.floor(e / 3600).toString().padStart(2, '0'),
+           m = Math.floor(e % 3600 / 60).toString().padStart(2, '0'),
+           s = Math.floor(e % 60).toString().padStart(2, '0');
+
+       return h + ':' + m + ':' + s;
+       //return `${h}:${m}:${s}`;
+   };
+
+
+   function iniciar() {
+       id = sacarVariablesUrl()["id"] || "66450"; // ¿Alguien prueba con "66450", "174870" o "144610" ?
+       size = sacarVariablesUrl()["size"] || "60";
+       page = sacarVariablesUrl()["page"] || "1";
+       offset = sacarVariablesUrl()["offset"] || "0"; // dejo la dejo como posible (pero normalmente la opción de "page" es preferible a la de "offset")
+       var xmlHttp = new XMLHttpRequest();
+
+       xmlHttp.onreadystatechange = function() {
+
+           if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
+
+               datos = JSON.parse(xmlHttp.responseText);
+               console.log(datos);
+
+               var datosListos = '';
+
+               // Se genera el índice enlazando a todas las páginas del programa. Y este índice lo pongo tanto al inicio como al final.
+               var numpages = datos.page.totalPages;
+               var indicepages = '';
+               indicepages += '<p>';
+               for (var j = 0; j < datos.page.totalPages; j++) {
+                   if (j + 1 != page) {
+                       indicepages += '<a href="rtve-programas-demovideos.html?id=' + id + '&size=' + size + '&offset=' + offset + '&page=' + (j + 1) + '">p' + (j + 1) + '</a>&emsp;';
+                   } else {
+                       indicepages += '<mark><a href="rtve-programas-demovideos.html?id=' + id + '&size=' + size + '&offset=' + offset + '&page=' + (j + 1) + '">p' + (j + 1) + '</a></mark>&emsp;';
+                   }
+               }
+               indicepages += '</p>';
+               document.getElementById("datos").innerHTML += indicepages + '<hr>';
+
+
+               for (var i = 0; i < datos.page.numElements; i++) {
+                   var dato = datos.page.items[i];
+                   console.log(dato);
+
+                   datosListos = '';
+
+                   if (dato.type.name != "Completo" && dato.type.name != "Entrevista") {
+                       completo = 'n';
+                   } else {
+                       completo = 'y'
+                   };
+
+                   if (completo == "y") {
+                       datosListos += '<div class="col-xs-6 col-lg-3 border border-1"><div class="panel panel-info">';
+                   } else {
+                       datosListos += '<div class="col-xs-6 col-lg-3 border border-1" style="background-color:lightblue;opacity:0.7;"><div class="panel panel-info">';
+                   }
+
+                   datosListos += '<span class="float-start">[' + secondsToTime(dato.duration / 1000) + ' 🕰]</span>';
+                   // datosListos += '<span class="float-start">['+dato.language+']</span>';
+                   datosListos += '<span class="float-end">[🗓️ ' + dato.dateOfEmission.replace(" 00:00:00", "") + ']&emsp;</span>';
+
+
+                   if (completo == "y") {
+                       datosListos += '<div class="panel-body"><a target="_blank" href="https://www.rtve.es/drmn/embed/video/' + dato.id + '"><img class="img-fluid border border-dark border-3" src="' + dato.imageSEO + '" alt="' + dato.alt + '"></a>';
+                   } else {
+                       datosListos += '<div class="panel-body"><a target="_blank" href="https://www.rtve.es/drmn/embed/video/' + dato.id + '"><img class="img-fluid rounded-circle" src="' + dato.imageSEO + '" alt="' + dato.alt + '"></a>';
+                   }
+
+                   datosListos += '<div><details style="cursor:pointer;"> <summary style="list-style:none;">' + dato.longTitle + '</summary> <p>' + dato.description + '</p> </details></div>';
+
+                   datosListos += '</div>';
+
+                   datosListos += '</div></div>';
+
+                   document.getElementById("datos").innerHTML += datosListos;
+               };
+
+               // El índice también lo ubico al final	    
+               document.getElementById("datos").innerHTML += '<hr>' + indicepages;
+
+               document.getElementById("cargando").style.display = "none";
+
+
+           } else if (xmlHttp.readyState === 4 && xmlHttp.status === 400) {
+               datos = JSON.parse(xmlHttp.responseText);
+               console.error("ERROR! 400 - Solicitud incorrecta!");
+               document.getElementById("cargando").style.display = "none";
+               document.getElementById("datos").innerHTML += "<h3>ERROR! 400 - Solicitud incorrecta!</h3>";
+
+           } else if (xmlHttp.readyState === 4 && xmlHttp.status === 404) {
+               datos = JSON.parse(xmlHttp.responseText);
+               console.error("ERROR! 404 - No encontrado!");
+               document.getElementById("cargando").style.display = "none";
+               document.getElementById("datos").innerHTML += "<h3>ERROR! 404 - No encontrado!</h3>";
+           }
+       };
+
+       xmlHttp.open("GET", "https://www.rtve.es/api/programas/" + id + "/videos.json?size=" + size + "&page=" + page + "&offset=" + offset, true);
+       xmlHttp.send();
+   };
+   iniciar();
+  </script>
+ </body>
+</html>
