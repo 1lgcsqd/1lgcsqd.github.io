@@ -1,1 +1,30 @@
-<body id=e><script>for(i=4;--i;)e.innerHTML+="<textarea id=t"+i+" placeholder="+[,"JS","CSS","HTML"][i]+" rows=9 onkeydown='if((K=event).keyCode==9){K.preventDefault();s=this.selectionStart;this.value=this.value.substring(0,this.selectionStart)+\"\t\"+this.value.substring(this.selectionEnd);this.selectionEnd=s+1}'>"+(unescape((l=location).hash.slice(1,-1)).split("\x7F")[i-1]||"");onload=onkeyup=function(a){q=[(E=escape)(j=t1[v="value"]),E(c=t2[v]),E(h=t3[v])].join("\x7f")+1;(H=history)&&H.replaceState?H.replaceState(0,0,"#"+q):location.hash=q;I=h||c||j?h+"<script>"+j+"<\/script><style>"+c:"<pre>Result";navigator.userAgent.match(/IE|Tr/)?((D=e.lastChild.contentWindow.document).write(I),D.close()):frames[0].location.replace("data:text/html,"+escape(I))}</script><style>html,body{height:100%}*{box-sizing:border-box;-moz-box-sizing:border-box;margin:0;vertical-align:top}textarea,iframe{border:1px solid}textarea{resize:none;width:33.333%;height:20%;*width:32%}iframe{width:100%;height:80%}a{position:absolute;bottom:0;right:0;background:#555;color:#fff;text-decoration:none;padding:0px 5px}</style><iframe>
+<! Este código reinterpreta https://xem.github.io/miniCodeEditor/1.1 -->
+<body id=e>
+
+ <style>
+  html,body{height:100%}
+  :root{--resultado-height:50%}
+  *{box-sizing:border-box;-moz-box-sizing:border-box;margin:0;vertical-align:top}
+  textarea,iframe{border:1px solid}
+  textarea{resize:none;width:33.333%;height:calc(100% - var(--resultado-height));*width:32%}
+  iframe{width:100%;height:var(--resultado-height)}
+  a{position:absolute;bottom:0;right:0;background:#555;color:#fff;text-decoration:none;padding:0px 5px}
+  .buttonresize{position:fixed;top:1%;right:1%;text-align:center;padding:5px;background:orange}
+ </style>
+
+ <div class="buttonresize">
+  <input type="range" min="0" max="100" value="50" oninput="perc.value = this.value+'%'; document.querySelector(':root').style.setProperty('--resultado-height',perc.value)">
+  <br>
+  Altura del Resultado:
+  <output id="perc">
+   50%
+  </output>
+ </div>
+
+ <script>
+  for(i=4;--i;)e.innerHTML+="<textarea id=t"+i+" placeholder="+[,"JScódigo","CSScódigo","HTMLcódigo"][i]+" rows=9 onkeydown='if((K=event).keyCode==9){K.preventDefault();s=this.selectionStart;this.value=this.value.substring(0,this.selectionStart)+\"\t\"+this.value.substring(this.selectionEnd);this.selectionEnd=s+1}'>"+(unescape((l=location).hash.slice(1,-1)).split("\x7F")[i-1]||"");onload=onkeyup=function(a){q=[(E=escape)(j=t1[v="value"]),E(c=t2[v]),E(h=t3[v])].join("\x7f")+1;(H=history)&&H.replaceState?H.replaceState(0,0,"#"+q):location.hash=q;I=h||c||j?h+"<script>"+j+"<\/script><style>"+c:"<pre>Resultado";navigator.userAgent.match(/IE|Tr/)?((D=e.lastChild.contentWindow.document).write(I),D.close()):frames[0].location.replace("data:text/html,"+escape(I))}
+ </script>
+
+ <iframe>
+
+</body>

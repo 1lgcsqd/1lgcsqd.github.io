@@ -1,22 +1,604 @@
-<img height=300 src="https://pbs.twimg.com/media/GPqZxMSWMAAifF1?format=jpg">
+ <style>
+  /* html,body{height:100%} */
+  :root{--img-height:80%}
+  /* :root{--img-height:300} */
+  a{display:inline}
+  img{height:var(--img-height)}
+  .buttonresize{position:fixed;top:1%;right:1%;text-align:center;padding:5px;background:orange}
+  .overlay {
+    position: absolute;
+    /* top: 10%; */
+    bottom: 2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+          .image-grid {
+            position: relative;
+        }
 
-<img height=300 src="https://wsrv.nl?url=https://pbs.twimg.com/media/GPqZxMSWMAAifF1?format=jpg">
-
-<img height=300 src="https://web.archive.org/web/20240609222330if_/https://0x0.st/XbYU.webp">
-
-<img height=300 src="https://0x0.st/XbYU.webp">
-
-<img height=300 src="https://archive.ph/JQ5Wr/aff68c94cbbdb272b859107296ff742bf7e259fd/scr.png">
-
-<img height=300 src="https://wsrv.nl?url=https://archive.ph/JQ5Wr/aff68c94cbbdb272b859107296ff742bf7e259fd/scr.png&trim=10&output=webp">
-
-<img height=300 src="https://wsrv.nl?url=https://archive.ph/XkF4o/07e67b549ab6757fcf37fd58b9473e8993ab577b/scr.png&trim=10&output=webp">
+ </style>
 
 
-<img height=300 src="https://img2.rtve.es/v/6980852/?h=300">
-<img height=300 src="https://wsrv.nl?url=https://img2.rtve.es/v/6980852/?h=300&output=webp">
-<img height=300 src="https://wsrv.nl?url=https://img2.rtve.es/v/6980852?h=300&output=webp">
-<img height=300 src="https://wsrv.nl?url=https://img2.rtve.es/v/6980852&output=webp">
+ <div class="buttonresize">
+  <input type="range" min="0" max="100" value="50" oninput="perc.value = this.value+'%'; document.querySelector(':root').style.setProperty('--img-height',perc.value)">
+  <br>
+  Altura Imágenes:
+  <output id="perc">
+   50%
+  </output>
+ </div>
+
+ <!--
+<img loading="lazy" src="https://pbs.twimg.com/media/GPqZxMSWMAAifF1?format=jpg">
+
+<img loading="lazy" src="https://wsrv.nl?url=https://pbs.twimg.com/media/GPqZxMSWMAAifF1?format=jpg">
+
+<img loading="lazy" src="https://web.archive.org/web/20240609222330if_/https://0x0.st/XbYU.webp">
+
+<img loading="lazy" src="https://0x0.st/XbYU.webp">
+
+<img loading="lazy" src="https://archive.ph/JQ5Wr/aff68c94cbbdb272b859107296ff742bf7e259fd/scr.png">
+
+<img loading="lazy" src="https://wsrv.nl?url=https://archive.ph/JQ5Wr/aff68c94cbbdb272b859107296ff742bf7e259fd/scr.png&trim=10&output=webp">
+
+<img loading="lazy" src="https://wsrv.nl?url=https://archive.ph/XkF4o/07e67b549ab6757fcf37fd58b9473e8993ab577b/scr.png&trim=10&output=webp">
+
+
+<img loading="lazy" src="https://img2.rtve.es/v/6980852/?h=300">
+<img loading="lazy" src="https://wsrv.nl?url=https://img2.rtve.es/v/6980852/?h=300&output=webp">
+<img loading="lazy" src="https://wsrv.nl?url=https://img2.rtve.es/v/6980852?h=300&output=webp">
+<img loading="lazy" src="https://wsrv.nl?url=https://img2.rtve.es/v/6980852&output=webp">
+-->
+
+'<!-- %s -->\n<a href="%s"><img loading="lazy" src="%s"></a>\n\n'
+
+    <div class="image-grid">
+	<div style="width:calc(900px * 0.53);border:5px solid #FF0000; padding:3px; margin:5px;">
+	<img width="900" style="clip-path:inset(0 47% 0 0);transform:scale(1.0)"
+			src="https://archive.ph/Nl6Wi/8218695d3537230c74e79d25dc048095e482c18a/scr.png" >
+	</img>
+	</div>
+        <div class="overlay">Text Overlay 3</div>
+    </div>
+
+
+<!-- 106 -->
+<a id="106" href="https://platform.twitter.com/embed/Tweet.html?id=1801026204700496048">
+<img loading="lazy" title="Post #106" src="https://wsrv.nl/?url=https://archive.ph/uwmJo/4507ba719319cdfc3db7a3ae903666e9e64767c2/scr.png&trim=5&h=1000&output=webp">
+Post #106
+</a>
+
+<!-- 105 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1800656727785840682">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/s7S9s/9195d3f6016c44e22112e0246055515e7d0ddd1f/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 104 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1800291915616911801">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/XkF4o/07e67b549ab6757fcf37fd58b9473e8993ab577b/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 103 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1799920788549894285">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/JQ5Wr/aff68c94cbbdb272b859107296ff742bf7e259fd/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 102 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1786515357798117396">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/YOjt8/960aefe41a3217603b9b4b8fc95f0e923d6e8062/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 101 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1786153902959669385">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/NT7PR/d1f5931d700e94c7134d2221472feacb91f32816/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 100 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1785681405239767504">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/KlFrj/fda8734a88845be7b48d4f16efcd4369e36227ec/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 099 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1784159866086363435">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/R0e0O/dca88ada5edece062b0e380ebcdf9a4f6d1f4aaa/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 098 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1783555225913102824">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/P4oCX/771c1b907c3915472e1940f4e86c6d040d4d32e9/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 097 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1783199113800266098">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/kVBwj/3191d6f015a08a694380dccd6a83a6aebef3bea8/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 096 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1782426634576175289">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/Nl6Wi/8218695d3537230c74e79d25dc048095e482c18a/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 095 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1782101285182853285">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/KPJp1/bd67a4820e27652769718a69111dc76c6e709ace/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 094 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1782074137172730091">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/BXyLw/577348fb994f9c5efcae7d68d2cb59056448d834/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 093 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1781570734776553541">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/vJk6C/84abf1164c659879119b647fb4f05deb83541921/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 092 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1780370552634393073">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/k2EW1/e3d2089766aabb544aa826a3cea2d283720e9ee3/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 091 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1779934982460350744">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/dK3rT/2f5926a7bea72ea840152b9b01cd1be7e01e15a7/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 090 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1779626166560710689">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/SDH5z/28b2a9ed250508e87e45f4369f387fcf71c0a46b/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 089 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1779272702160674958">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/tpb81/cf6f8cc9bb8a8d82da79053f1f87e7db47279478/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 088 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1778548209163350405">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/9gKWC/00f8ed0b8f0a82c5eba68e34b029007dddb059da/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 087 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1778192523074338972">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/zb9Kq/b58636a3e4326aebbf87c120d4c9fd6d9b3ff0e9/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 086 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1777811112714457488">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/4M4Hr/f150d0d7d4c3d363942be5f1abdb16ce9fe96397/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 085 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1776345506513395988">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/sLJs4/d3e90d677e5d417a7137d2bbf35059362828d81c/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 084 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1775770586263744563">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/CO8Pl/b2c62d222bb12b2acea89824fd83d7733f3419a3/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 083 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1775268893151637706">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/yv0YW/7dfe76652c2d3bf148336a6fcf873cdd45914ec1/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 082 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1774908135037100499">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/nEbZ1/0a5bc1df9cc05256463bf5bde0acb0e7b37aa28f/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 081 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1774557976986108121">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/6woWW/d73431b2e3a647363db87980d6a66ab720de284d/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 080 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1770942632790769776">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/5lf8C/c378eccb17c84de27572563da191b62d53ee1701/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 079 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1770793309230727286">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/cN8uc/4059570933089324d8ed6fb6223d32a60b5cbed3/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 078 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1770560871699304683">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/ZQZtT/29cc645869e685f70ebd6ed5f97526f23c6a5907/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 077 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1770217741040968136">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/UvcCN/5be6b8cef4469a2c3ffb780a9b8ceb8112df9282/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 076 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1770053495321694364">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/sD4oq/c0bc24d0fa98a89bd6273314207d5a725fc7c149/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 075 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1769852271049740694">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/4XAcP/be338ccabfe19e97f6fa6978ceb0aeb7c626a548/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 074 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1769768574812327963">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/Jmp2C/6bb9206d09796dd3bf68a7d5cb89e4acd93f330e/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 073 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1769697418121994516">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/X7Vs3/da542498c4f3c5a9d5da0dc34ceec4bfe50fdec7/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 072 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1769482054884864192">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/kuM2H/668c9975a2e8bcf168cbee5a4b287962845d91fe/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 071 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1769326011663958192">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/8S17r/8fbfb6a563f73abf7661c112ab101b898c760f05/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 070 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1769113753486819366">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/udeGo/e034cd07e2ee2d1e254dbba8db233f38fd259a9a/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 069 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1768963155785392572">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/DLq3m/d5938f8f2526778389125125cb63fe75891ba187/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 068 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1768765375565488435">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/zsjcX/410b472cc24812863e5ba37a7220d4c4ce4ea3d6/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 067 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1768568720480178663">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/5vQXc/c7f3554754512cb6f3c3597f85cb082861d3de82/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 066 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1768402537785262259">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/JaKQE/e1e2784403a0137a777e1b558000549c2502c4e2/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 065 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1768014797927239759">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/1mYnw/3802c67fe978476868e1aac59264c8272fe5a5de/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 064 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1768012501805928542">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/3CxFD/e44a5848cb330d314a4d8c9c1d91fdb09fa309c2/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 063 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1766147605422092767">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/oWKeA/01bb99eac2f0f507b775f742d26ced61c09e9b2a/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 062 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1675485265803063299">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/9UhcT/025d3a337a3587bb8412557453bf68150eb899df/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 061 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1674516936300941314">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/8I8oz/adb6b5959110da2cef32deb760138650ebbf79e0/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 060 -->
+<a id="60" href="https://platform.twitter.com/embed/Tweet.html?id=1674140775553155075">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/CHl7q/d573e68be5b8ef2cb85d2db7bbddf33abb80982a/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 059 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1673794777840599042">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/fjA0b/a10a68774e74af7eb266cc460b7a420df820d06e/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 058 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1673412551349096448">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/oRNm9/b3c3479f7fe830888373d28cc8838763fbf12c41/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 057 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1672986790318202881">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/H6FUI/4496f833105f1c2f113e4715032f33b31d993233/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 056 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1672005177941819395">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/t6RTI/36ccab6607633ca4016d6e3a1515638478e60eac/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 055 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1671641253094490121">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/u026M/36d59654d6c5687ca655e4818eabf4cd29057655/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 054 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1671264003421769730">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/asxXg/8d8cd4ca2d2b2f38565cd7d2139a4a07075dea5a/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 053 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1670923651833638913">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/TkKUb/28866409759427c5fffd1db052839534aedf82b6/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 052 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1669476419745771523">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/IsVVg/4ccc9328b467e613e25fc05d5657b13bb4a1f470/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 051 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1669063694720827392">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/nUqLK/389fb2a1cdca034088d612e73481f967d4a6e6cc/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 050 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1669030840020475932">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/BDhbu/8264cd6a907a6826c1d97e1884f7a14696728091/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 049 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1666928204714504192">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/St6Dj/ae8c6170a0ebf7fef26bf225853209a21ae595c9/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 048 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1666576605827792896">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/tKXq1/16c26fbffe0f47296d5ea7e1a66bcd8d10a9c3ea/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 047 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1666533858764881920">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/mjQyx/f5dee6d6424240c3c2c8b16f657d6b1c8de9c440/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 046 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1666202200958197818">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/7z6Bc/c03c5ef926e21421b064e279abb902e5aa2d1837/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 045 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1666192975204872192">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/kgh0f/5cc2b018617cfd285e7302a98c4c159cc79a9194/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 044 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1666116568445534213">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/uQ9nU/8eaf1acb898ea32f0ad523d3ef5a954aae3dd3fb/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 043 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1665961734509666304">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/YPm6L/118e61d332b15872061687c60ae5acee91187d88/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 042 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1665119802245955584">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/LSd6s/24635fe8e0251669460c72125b1ea59785b8cb94/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 041 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1663671282242551812">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/4FTL2/cc10ab939221876ad8653682ce690a9dc4a15d77/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 040 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1663552449913966594">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/5z4Y6/4b01530a7ec33da087e47974388ccb43462dd9f7/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 039 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1663453122881114113">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/pRCxm/0b242c8e85909a5e460006d6f3e871bb79833f09/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 038 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1663442906965843969">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/Met60/14caa528ca48f4289ca2a1aa4ffc469f1b0cc59c/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 037 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1644218157266087937">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/xb05j/579e9bec64fa9ad8e66fd6ba5b888fb4b2074f69/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 036 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1638875704627535873">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/8sRS1/852bb3009bc97dd0db9d2217e938e48e3a514cc6/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 035 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1637235905810382848">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/WynTp/77764291c3af4c7937dcb301addae897cae9a78e/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 034 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1636851245586477058">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/3IxaD/b67b59543f5e70e7decde56c49dce678565fc20d/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 033 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1636495326906310663">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/5Fnoo/cdc54c2c6651345ef607b5ec83be6074cf266d07/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 032 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1635759261169975296">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/EQUaI/b4d261a28d2dd926c871fda98f8f41e1d42ab7c5/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 031 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1635394286467567616">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/pOq81/1bbaa4f797bac6094f923f4081161dcfc4a8fb02/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 030 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1635260886171664386">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/05hWJ/63041cf31c8e9ff09f153558ae29eb37cce8359c/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 029 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1635061919135719429">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/VJu5D/fa4da79aa4fa17ff3581214728b092d693ac4121/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 028 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1634327974013968384">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/6kmti/8e2b635226dd120e8c782ac0e30c51fbe92fe875/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 027 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1634176310711836673">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/k5RTJ/68e425e45975072d4cc08b862df99a0e5cf4dc31/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 026 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1633914563522445312">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/Dh5qB/571442e561935b0452149ab1cb76c0a05bdab766/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 025 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1633737712803954688">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/bqXce/61493e6aad1eaa7218f6d07eb880d4d16c5dddaf/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 024 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1633447296565125121">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/bitoB/de616ffb61454a8b5f18e60d9799ba619def5515/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 023 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1633262436479299585">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/R5mj8/f7b39a3044050e1f4681b68dec2225bb6813a57d/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 022 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1631789336185257984">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/dpyS5/bbe734a8dc9e1d82f862b2bb1036116fda9dd077/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 021 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1631428348067950592">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/IqrCD/d22ec4179242afb6c2db7b88c08cb6a7065fbb1f/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 020 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1631068513455538177">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/7Viem/5e5a81ed39a6a99ee043a6e75b3a003e53c63bab/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 019 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1624530380656189440">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/V0OeK/c3ca1eab72c7dd49355ef87305a604c25a181e1d/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 018 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1618311424916455424">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/ffGMj/f887fd439e0c97b9075fd9d5c2d9793dea081aad/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 017 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1613237600688689152">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/qTdaF/c1447781597f160d033d7440d8c6a966094c4a59/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 016 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1612917172291903576">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/f1obK/3659953ca6b1dcb5452306e8e87a6225b5cf1927/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 015 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1612572420426158093">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/tKeBu/4658358c3455a2e8ffb5e46e48e997777c94d9b1/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 014 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1612221465494953984">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/pq6K5/f828b2e045891f8e1d391573087eb26289951d48/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 013 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1611806060804702208">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/dwCLt/9f103d52ea53a2209d3e3bde10e0221042cd8694/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 012 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1611442117645111303">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/wLvi2/493bd6a18e04b584f9b66239a8ef948f580573e6/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 011 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1611129090802700308">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/YEo0v/08a4eeb51e08462452eb5f71952efd75ba02322f/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 010 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1610704070548852736">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/puDHh/e317540e4a2f60d8cbe28ef2c0b1744df523e2f0/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 009 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1610369956901785604">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/vUQ2a/c82b6f216ffc89821d4086193660c885fcd4205b/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 008 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1610013000060268544">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/O9JzJ/36a03f4522fc2187500333d5044e8a6cdc18708d/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 007 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1609148806834323457">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/i7XiA/ac580a662f5f29ab18a99863537e6cf516c8b51c/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 006 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1605508032087044096">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/pyaDt/86ae7e9b7c1cefa759cad0f6794e63a6bb69d569/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 005 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1605504486897684480">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/x3HZK/8c64b1d40bb13beb8ab0b9cf28452d2d6f496cc1/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 004 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1605500317570715648">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/TnUyH/06f002d42d80f366c72557976e8e449a03ba2208/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 003 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1599537126080929793">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/9FzjH/7797ebf4b4901a6133ea8f7d6e67b4d65c4ebb3a/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 002 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1596939131418193920">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/HDFPO/b30c020f17e54a9b4f22db8adf0c86a8ec8227da/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+<!-- 001 -->
+<a href="https://platform.twitter.com/embed/Tweet.html?id=1594459946724253702">
+<img loading="lazy" src="https://wsrv.nl/?url=https://archive.ph/FpR0N/105d7f3bd94b65fdec30e586c698e15ad53b640b/scr.png&trim=5&h=1000&output=webp">
+</a>
+
+
+<!--
 
 <video height="300" controls  >
   <source src="https://0x0.st/XHKf.mp4" type="video/mp4">
@@ -36,4 +618,6 @@ Your browser does not support the video tag.
   <source src="https://web.archive.org/web/20240512135826if_/https://0x0.st/XHKf.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video> 
+
+-->
 
